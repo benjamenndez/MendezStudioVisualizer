@@ -7,9 +7,8 @@
 <meta name="description" content="Mendez Studio: agencia creativa versátil. Contenido, redes, marcas, páginas web, guiones y todo lo que hace falta para mejorar un negocio.">
 <meta name="theme-color" content="#51000f">
 <link rel="icon" href="assets/brand/logo-original.png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,200..800&family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link rel="preload" href="assets/fonts/web/BricolageGrotesque-normal-200-800-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
 <link rel="stylesheet" href="css/styles.css">
 </head>
 <body data-nav="blue">
@@ -86,12 +85,10 @@
 
   <div class="hero__stickers" aria-hidden="true">
     <svg class="stk stk--1" data-depth="0.9"><use href="#s-flower"/></svg>
-    <svg class="stk stk--2" data-depth="-0.6"><use href="#s-spiral"/></svg>
     <svg class="stk stk--3" data-depth="0.5"><use href="#s-bubble"/></svg>
     <svg class="stk stk--4" data-depth="-1"><use href="#s-sparkle"/></svg>
     <svg class="stk stk--5" data-depth="0.7"><use href="#s-cursor"/></svg>
     <svg class="stk stk--6" data-depth="-0.4"><use href="#s-asterisk"/></svg>
-    <svg class="stk stk--7" data-depth="0.8"><use href="#s-arch"/></svg>
   </div>
 
   <div class="hero__inner">
@@ -259,14 +256,13 @@
     <span class="line"><span class="line__in">¿Tenés un</span></span>
     <span class="line"><span class="line__in">proyecto<span class="dotmark">?</span></span></span>
   </h2>
-  <a class="contact__btn" href="mailto:hola@mendezstudio.com" data-magnetic data-cursor="Escribir">
+  <a class="contact__btn" href="mailto:mendezstudioarg@gmail.com" data-magnetic data-cursor="Escribir">
     <span class="contact__btn-in"><b>Hablemos</b><svg viewBox="0 0 24 24" width="28" height="28"><path d="M5 19L19 5M8 5h11v11" fill="none" stroke="currentColor" stroke-width="2.200" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
   </a>
-  <div class="contact__mid"><div class="contact__mendi" id="contactMendi" data-cursor="Hola"></div></div>
   <div class="contact__cols mono">
-    <div><span>Escribinos</span><a href="mailto:hola@mendezstudio.com" data-link>hola@mendezstudio.com</a></div>
-    <div><span>Seguinos</span><a href="#" data-link>Instagram</a><a href="#" data-link>TikTok</a><a href="#" data-link>LinkedIn</a></div>
-    <div><span>Estado</span><p><span class="dot"></span> Abiertos a nuevos proyectos</p><a href="mascota/index.html" data-link>Conocé a Mendi →</a></div>
+    <div><span>Escribinos</span><a href="mailto:mendezstudioarg@gmail.com" data-link>mendezstudioarg@gmail.com</a></div>
+    <div><span>Seguinos</span><a href="https://www.instagram.com/mendezstudio__/" target="_blank" rel="noopener" data-link>Instagram</a></div>
+    <div><span>Estado</span><p><span class="dot"></span> Abiertos a nuevos proyectos</p></div>
   </div>
   <div class="contact__logo"><img src="assets/brand/logo-blue.png" alt="Mendez Studio"></div>
   <p class="legal mono"><span>© 2026 Mendez Studio</span><a href="#top" data-link>Volver arriba ↑</a></p>
@@ -285,6 +281,7 @@
     <div class="case__meta mono" id="caseMeta"></div>
     <div class="case__hero cover" id="caseHero"></div>
     <p class="case__desc" id="caseDesc"></p>
+    <nav class="case__nav mono" id="caseNav" aria-label="Secciones del proyecto"></nav>
     <div class="case__groups" id="caseFrames"></div>
     <button class="case__next" id="caseNext"><span class="mono">Siguiente proyecto</span><b id="caseNextTitle"></b></button>
   </div>
@@ -293,7 +290,6 @@
 <script src="assets/vendor/gsap.min.js"></script>
 <script src="assets/vendor/ScrollTrigger.min.js"></script>
 <script src="assets/vendor/lenis.min.js"></script>
-<script src="mascota/mendi.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
