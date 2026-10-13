@@ -484,6 +484,28 @@ body.menu-open .nav__burger{opacity:0;pointer-events:none}
   .serv__dots i.on{width:28px;opacity:1}
 }
 @media (min-width:901px){.serv__dots{display:none}}
+
+/* ---------- Compu: barra con botones-cápsula separados, con fondo difuminado ---------- */
+@media (min-width:901px){
+  .nav{padding:16px var(--g);align-items:center}
+  .nav__logo,.nav__links a,.nav__clock{
+    border-radius:999px;
+    background:color-mix(in srgb,var(--maroon) 55%,transparent);
+    -webkit-backdrop-filter:blur(16px) saturate(1.5);backdrop-filter:blur(16px) saturate(1.5);
+    border:1px solid rgba(135,179,254,.28);box-shadow:0 12px 30px -14px rgba(0,0,0,.55);
+    transition:background .4s,color .4s,border-color .4s,transform .5s var(--ease)}
+  body[data-nav=maroon] .nav__logo,body[data-nav=maroon] .nav__links a,body[data-nav=maroon] .nav__clock{
+    background:color-mix(in srgb,var(--blue) 62%,transparent);border-color:rgba(81,0,15,.25)}
+  .nav__logo{width:116px;height:46px;aspect-ratio:auto}
+  .nav__logo img{inset:auto;left:18px;top:11px;width:calc(100% - 36px);height:calc(100% - 22px)}
+  .nav__links{gap:8px}
+  .nav__links a{padding:13px 20px;overflow:visible}
+  .nav__links a::after{display:none}
+  .nav__links a:hover{background:var(--blue);color:var(--maroon);border-color:var(--blue);transform:translateY(-2px)}
+  body[data-nav=maroon] .nav__links a:hover{background:var(--maroon);color:var(--blue);border-color:var(--maroon)}
+  .nav__logo:hover{transform:translateY(-2px)}
+  .nav__clock{padding:13px 20px}
+}
 </style>
 </head>
 <body data-nav="blue">
